@@ -26,9 +26,7 @@ where $\pi^*(s)$ is the expert action for state $s$. For iterations $i = 1, 2, \
 2. **Data Collection**  
    Execute $\pi_i$ in the environment to collect states $S_i$ and query the expert for corresponding actions:
 
-   $$
-   \{(s, \pi^*(s)) : s \in S_i\}
-   $$
+   $$\{(s, \pi^*(s)) : s \in S_i\}$$
 
 3. **Data Aggregation**  
    Update the dataset as:
