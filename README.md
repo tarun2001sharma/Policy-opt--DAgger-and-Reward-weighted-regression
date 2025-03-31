@@ -13,7 +13,7 @@ Behavior cloning often suffers from compounding errors when the agent encounters
 ### DAgger Algorithm
 
 We initialize with a dataset of expert demonstrations:  
-$ D_0 = {(s, \pi^*(s))} $  
+$D_0 = {(s, \pi^*(s))}$  
 where $ \pi^*(s) $ is the expert action for state $ s $. For iterations $ i = 1, 2, \dots, N $, the following steps are performed:
 
 1. **Policy Training:**  
