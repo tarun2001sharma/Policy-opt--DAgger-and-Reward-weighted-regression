@@ -31,15 +31,11 @@ where $\pi^*(s)$ is the expert action for state $s$. For iterations $i = 1, 2, \
 3. **Data Aggregation**  
    Update the dataset as:
 
-   $$
-   D_{i+1} = D_i \cup \{(s, \pi^*(s)) : s \in S_i\}
-   $$
+   $$D_{i+1} = D_i \cup \{(s, \pi^*(s)) : s \in S_i\}$$
 
 The overall training objective is to minimize:
 
-$$
-\mathcal{L}(\pi) = \mathbb{E}_{s \sim D} [\ell(\pi(s), \pi^*(s))]
-$$
+$$\mathcal{L}(\pi) = \mathbb{E}_{s \sim D} [\ell(\pi(s), \pi^*(s))]$$
 
 where $\ell$ is typically the mean squared error loss.
 
@@ -56,9 +52,7 @@ This beta scheduling reduces redundant expert queries while still ensuring suffi
 
 Reward-weighted regression refines policy learning by assigning weights to samples based on their rewards. The weighted loss is formulated as:
 
-$$
-\mathcal{L}_{\text{weighted}}(\pi) = \mathbb{E}_{s \sim D} [w(s) \cdot \ell(\pi(s), \pi^*(s))]
-$$
+$$\mathcal{L}_{\text{weighted}}(\pi) = \mathbb{E}_{s \sim D} [w(s) \cdot \ell(\pi(s), \pi^*(s))]$$
 
 where $w(s)$ is a weight proportional to the reward associated with state $s$. This prioritizes high-quality trajectories during training.
 
