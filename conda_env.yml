@@ -1,0 +1,34 @@
+name: ddrl
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip>=23.0
+  - numpy>=1.24
+  - pandas
+  - jupyterlab>=3.0
+  - mediapy=1.1.8
+  - matplotlib>=3.4
+  - scipy
+  - scikit-learn
+  - scikit-image
+  - imageio>=2.9
+  - imageio-ffmpeg>=0.4
+  - pillow
+  - termcolor>=2.1
+  - tqdm>=4.64
+  - pip:
+    - mujoco
+    - dm_control
+    - gym==0.22.0
+    - hydra-core
+    - hydra-submitit-launcher
+    - ffmpeg-python
+    - opencv-python
+    - ipdb
+    - torch
+    - torchvision
+    - torchaudio
+    - protobuf
+    - tb-nightly
