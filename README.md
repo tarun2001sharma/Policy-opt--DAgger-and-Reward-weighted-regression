@@ -52,7 +52,10 @@ This beta scheduling reduces redundant expert queries while still ensuring suffi
 
 Reward-weighted regression refines policy learning by assigning weights to samples based on their rewards. The weighted loss is formulated as:
 
-$$\mathcal{L}_{\text{weighted}}(\pi) = \mathbb{E}_{s \sim D} [w(s) \cdot \ell(\pi(s), \pi^*(s))]$$
+$$
+L_{\text{weighted}}(\pi) = \mathbb{E}_{s \sim D} \left[w(s) \cdot \ell(\pi(s), \pi^*(s))\right]
+$$
+
 
 where $w(s)$ is a weight proportional to the reward associated with state $s$. This prioritizes high-quality trajectories during training.
 
