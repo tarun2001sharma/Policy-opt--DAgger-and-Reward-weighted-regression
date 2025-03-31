@@ -12,7 +12,7 @@ DAgger mitigates the compounding errors of behavior cloning by iteratively aggre
 
 1. **Initialization:**  
    Begin with a dataset of expert demonstrations:  
-   $$ D_0 = \{(s, \pi^*(s)) \} $$  
+   $$D_0 = \{(s, \pi^*(s)) \}$$  
    where \( \pi^*(s) \) is the expert action for state \( s \).
 
 2. **Iteration:**  
